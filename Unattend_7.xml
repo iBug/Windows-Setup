@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unattend xmlns="urn:schemas-microsoft-com:unattend">
+    <settings pass="windowsPE">
+        <component name="Microsoft-Windows-Setup" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <Display>
+                <ColorDepth>32</ColorDepth>
+                <HorizontalResolution>1024</HorizontalResolution>
+                <RefreshRate>60</RefreshRate>
+                <VerticalResolution>768</VerticalResolution>
+            </Display>
+            <UserData>
+                <ProductKey>
+                    <Key>49CGJ-4MTTF-WCM4W-K8WMG-3G2VT</Key>
+                    <WillShowUI>Never</WillShowUI>
+                </ProductKey>
+                <AcceptEula>true</AcceptEula>
+                <FullName>Windows 7</FullName>
+                <Organization>Microsoft Corporation</Organization>
+            </UserData>
+            <EnableFirewall>false</EnableFirewall>
+            <EnableNetwork>false</EnableNetwork>
+            <Restart>Restart</Restart>
+            <UseConfigurationSet>true</UseConfigurationSet>
+            <LogPath />
+            <ComplianceCheck>
+                <DisplayReport>OnError</DisplayReport>
+            </ComplianceCheck>
+            <Diagnostics>
+                <OptIn>true</OptIn>
+            </Diagnostics>
+            <DiskConfiguration>
+                <WillShowUI>Never</WillShowUI>
+            </DiskConfiguration>
+            <DynamicUpdate>
+                <WillShowUI>Never</WillShowUI>
+            </DynamicUpdate>
+            <PageFile>
+                <Path>C:\pagefile.sys</Path>
+                <Size>2048</Size>
+            </PageFile>
+            <UpgradeData>
+                <WillShowUI>Never</WillShowUI>
+            </UpgradeData>
+        </component>
+        <component name="Microsoft-Windows-International-Core-WinPE" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <SetupUILanguage>
+                <UILanguage>zh-CN</UILanguage>
+            </SetupUILanguage>
+            <InputLocale>zh-CN</InputLocale>
+            <LayeredDriver>1</LayeredDriver>
+            <SystemLocale>zh-CN</SystemLocale>
+            <UILanguage>zh-CN</UILanguage>
+            <UILanguageFallback>zh-CN</UILanguageFallback>
+            <UserLocale>zh-CN</UserLocale>
+        </component>
+    </settings>
+    <settings pass="oobeSystem">
+        <component name="Microsoft-Windows-International-Core" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <InputLocale>zh-CN</InputLocale>
+            <SystemLocale>zh-CN</SystemLocale>
+            <UILanguage>zh-CN</UILanguage>
+            <UILanguageFallback>zh-CN</UILanguageFallback>
+            <UserLocale>zh-CN</UserLocale>
+        </component>
+        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <AutoLogon>
+                <Password>
+                    <PlainText>true</PlainText>
+                    <Value />
+                </Password>
+                <Enabled>true</Enabled>
+                <Username>Windows</Username>
+                <Domain />
+                <LogonCount>1</LogonCount>
+            </AutoLogon>
+            <Display>
+                <ColorDepth>32</ColorDepth>
+                <HorizontalResolution>1024</HorizontalResolution>
+                <RefreshRate>60</RefreshRate>
+                <VerticalResolution>768</VerticalResolution>
+            </Display>
+            <OEMInformation>
+                <Manufacturer>Microsoft Corporation</Manufacturer>
+                <Model>Windows 6.1.7601</Model>
+                <SupportURL>http://windows.microsoft.com/</SupportURL>
+                <Logo>%SystemRoot%\Web\OEMLogo.bmp</Logo>
+            </OEMInformation>
+            <OOBE>
+                <HideEULAPage>true</HideEULAPage>
+                <HideWirelessSetupInOOBE>true</HideWirelessSetupInOOBE>
+                <NetworkLocation>Work</NetworkLocation>
+                <ProtectYourPC>1</ProtectYourPC>
+            </OOBE>
+            <UserAccounts>
+                <AdministratorPassword>
+                    <Value></Value>
+                    <PlainText>true</PlainText>
+                </AdministratorPassword>
+                <LocalAccounts>
+                    <LocalAccount wcm:action="add">
+                        <DisplayName>Windows 7</DisplayName>
+                        <Group>Administrators</Group>
+                        <Name>Windows</Name>
+                        <Description>Default Windows 7 User</Description>
+                    </LocalAccount>
+                </LocalAccounts>
+            </UserAccounts>
+            <VisualEffects>
+                <FontSmoothing>ClearType</FontSmoothing>
+            </VisualEffects>
+            <WindowsFeatures>
+                <ShowInternetExplorer>true</ShowInternetExplorer>
+                <ShowMediaCenter>false</ShowMediaCenter>
+                <ShowWindowsMediaPlayer>true</ShowWindowsMediaPlayer>
+            </WindowsFeatures>
+            <DoNotCleanTaskBar>false</DoNotCleanTaskBar>
+            <DisableAutoDaylightTimeSet>true</DisableAutoDaylightTimeSet>
+            <BluetoothTaskbarIconEnabled>false</BluetoothTaskbarIconEnabled>
+            <ShowWindowsLive>false</ShowWindowsLive>
+            <Themes>
+                <WindowColor>Sky</WindowColor>
+            </Themes>
+            <TimeZone>zh-CN</TimeZone>
+        </component>
+    </settings>
+    <settings pass="specialize">
+        <component name="Microsoft-Windows-IE-InternetExplorer" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <Home_Page>http://www.baidu.com/</Home_Page>
+            <BlockPopups>no</BlockPopups>
+            <CompanyName>Microsoft Corporation</CompanyName>
+            <DisableDataExecutionPrevention>false</DisableDataExecutionPrevention>
+            <DisableDevTools>true</DisableDevTools>
+            <FilterLevel>Medium</FilterLevel>
+            <PlaySound>false</PlaySound>
+            <SuggestedSitesEnabled>false</SuggestedSitesEnabled>
+            <Window_Title_CN>Microsoft Corporation</Window_Title_CN>
+            <ShowInformationBar>false</ShowInformationBar>
+            <CompatibilityViewDomains />
+            <AllowedSites />
+            <FindProvidersURL />
+            <Help_Page />
+            <LocalIntranetSites />
+            <TrustedSites />
+            <UserAgent />
+            <StartPages>
+                <StartPage wcm:action="add">
+                    <StartPageUrl>http://www.baidu.com/</StartPageUrl>
+                    <StartPageKey>百度</StartPageKey>
+                </StartPage>
+            </StartPages>
+        </component>
+        <component name="Microsoft-Windows-Security-SPP-UX" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <SkipAutoActivation>true</SkipAutoActivation>
+        </component>
+        <component name="Microsoft-Windows-International-Core" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <InputLocale>zh-CN</InputLocale>
+            <SystemLocale>zh-CN</SystemLocale>
+            <UILanguage>zh-CN</UILanguage>
+            <UILanguageFallback>zh-CN</UILanguageFallback>
+            <UserLocale>zh-CN</UserLocale>
+        </component>
+        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <AutoLogon>
+                <Password>
+                    <PlainText>true</PlainText>
+                    <Value />
+                </Password>
+                <Enabled>true</Enabled>
+                <Username>Windows</Username>
+                <Domain />
+                <LogonCount>1</LogonCount>
+            </AutoLogon>
+            <Display>
+                <ColorDepth>32</ColorDepth>
+                <HorizontalResolution>1024</HorizontalResolution>
+                <RefreshRate>60</RefreshRate>
+                <VerticalResolution>768</VerticalResolution>
+            </Display>
+            <OEMInformation>
+                <Manufacturer>Microsoft Corporation</Manufacturer>
+                <Model>Windows 6.1.7601</Model>
+                <SupportURL>http://windows.microsoft.com/</SupportURL>
+                <Logo>%SystemRoot%\Web\OEMLogo.bmp</Logo>
+            </OEMInformation>
+            <Themes>
+                <WindowColor>Sky</WindowColor>
+            </Themes>
+            <WindowsFeatures>
+                <ShowInternetExplorer>true</ShowInternetExplorer>
+                <ShowMediaCenter>false</ShowMediaCenter>
+                <ShowWindowsMediaPlayer>true</ShowWindowsMediaPlayer>
+            </WindowsFeatures>
+            <ComputerName>Desktop-PC</ComputerName>
+            <DoNotCleanTaskBar>true</DoNotCleanTaskBar>
+            <ProductKey>49CGJ-4MTTF-WCM4W-K8WMG-3G2VT</ProductKey>
+            <RegisteredOrganization>Microsoft Corporation</RegisteredOrganization>
+            <RegisteredOwner>Windows 7</RegisteredOwner>
+            <ShowWindowsLive>false</ShowWindowsLive>
+            <CopyProfile>false</CopyProfile>
+            <DisableAutoDaylightTimeSet>true</DisableAutoDaylightTimeSet>
+            <BluetoothTaskbarIconEnabled>false</BluetoothTaskbarIconEnabled>
+            <TimeZone>China Standard Time</TimeZone>
+        </component>
+    </settings>
+    <settings pass="offlineServicing">
+        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <OEMInformation>
+                <Manufacturer>Microsoft Corporation</Manufacturer>
+                <Model>Windows 6.1.7601</Model>
+                <SupportURL>http://windows.microsoft.com/</SupportURL>
+                <Logo>%SystemRoot%\Web\OEMLogo.bmp</Logo>
+            </OEMInformation>
+        </component>
+    </settings>
+    <cpi:offlineImage cpi:source="catalog:e:/sources/install_windows 7 professional.clg" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
+</unattend>

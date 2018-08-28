@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unattend xmlns="urn:schemas-microsoft-com:unattend">
+    <settings pass="auditSystem">
+        <component name="Microsoft-Windows-Deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <AuditComputerName>
+                <Name>Windows-PC</Name>
+            </AuditComputerName>
+        </component>
+    </settings>
+    <settings pass="windowsPE">
+        <component name="Microsoft-Windows-International-Core-WinPE" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <SetupUILanguage>
+                <UILanguage>zh-CN</UILanguage>
+            </SetupUILanguage>
+            <InputLocale>zh-CN</InputLocale>
+            <LayeredDriver>1</LayeredDriver>
+            <SystemLocale>zh-CN</SystemLocale>
+            <UILanguage>zh-CN</UILanguage>
+            <UILanguageFallback>zh-CN</UILanguageFallback>
+            <UserLocale>zh-CN</UserLocale>
+        </component>
+        <component name="Microsoft-Windows-Setup" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <UserData>
+                <ProductKey>
+                    <WillShowUI>OnError</WillShowUI>
+                    <Key>VK7JG-NPHTM-C97JM-9MPGT-3V66T</Key>
+                </ProductKey>
+                <AcceptEula>true</AcceptEula>
+                <FullName>Windows 10</FullName>
+                <Organization>Microsoft Corporation</Organization>
+            </UserData>
+            <Display>
+                <ColorDepth>32</ColorDepth>
+                <HorizontalResolution>1024</HorizontalResolution>
+                <RefreshRate>60</RefreshRate>
+                <VerticalResolution>768</VerticalResolution>
+            </Display>
+            <PageFile>
+                <Size>2048</Size>
+            </PageFile>
+            <UseConfigurationSet>false</UseConfigurationSet>
+            <EnableFirewall>false</EnableFirewall>
+            <EnableNetwork>false</EnableNetwork>
+            <Restart>Restart</Restart>
+        </component>
+    </settings>
+    <settings pass="oobeSystem">
+        <component name="Microsoft-Windows-International-Core" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <InputLocale>zh-CN</InputLocale>
+            <UILanguage>zh-CN</UILanguage>
+            <UILanguageFallback>zh-CN</UILanguageFallback>
+            <UserLocale>zh-CN</UserLocale>
+            <SystemLocale>zh-CN</SystemLocale>
+        </component>
+        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <DesktopOptimization>
+                <GoToDesktopOnSignIn>true</GoToDesktopOnSignIn>
+                <ShowWindowsStoreAppsOnTaskbar>true</ShowWindowsStoreAppsOnTaskbar>
+            </DesktopOptimization>
+            <Display>
+                <ColorDepth>32</ColorDepth>
+                <DPI>120</DPI>
+                <HorizontalResolution>1024</HorizontalResolution>
+                <RefreshRate>60</RefreshRate>
+                <VerticalResolution>768</VerticalResolution>
+            </Display>
+            <OEMInformation>
+                <HelpCustomized>false</HelpCustomized>
+                <Manufacturer>Microsoft Corporation</Manufacturer>
+                <Model>Windows 10 Operating System</Model>
+                <SupportURL>http://www.microsoft.com/windows/</SupportURL>
+            </OEMInformation>
+            <OOBE>
+                <VMModeOptimizations>
+                    <SkipAdministratorProfileRemoval>true</SkipAdministratorProfileRemoval>
+                    <SkipNotifyUILanguageChange>true</SkipNotifyUILanguageChange>
+                    <SkipWinREInitialization>false</SkipWinREInitialization>
+                </VMModeOptimizations>
+                <HideEULAPage>true</HideEULAPage>
+                <HideWirelessSetupInOOBE>true</HideWirelessSetupInOOBE>
+                <ProtectYourPC>1</ProtectYourPC>
+                <UnattendEnableRetailDemo>false</UnattendEnableRetailDemo>
+                <HideOEMRegistrationScreen>true</HideOEMRegistrationScreen>
+                <HideLocalAccountScreen>true</HideLocalAccountScreen>
+                <HideOnlineAccountScreens>true</HideOnlineAccountScreens>
+            </OOBE>
+            <UserAccounts>
+                <AdministratorPassword>
+                    <Value></Value>
+                    <PlainText>true</PlainText>
+                </AdministratorPassword>
+                <LocalAccounts>
+                    <LocalAccount wcm:action="add">
+                        <Password>
+                            <Value></Value>
+                            <PlainText>true</PlainText>
+                        </Password>
+                        <Group>Administrators</Group>
+                        <DisplayName>Windows 10</DisplayName>
+                        <Name>Windows</Name>
+                    </LocalAccount>
+                </LocalAccounts>
+            </UserAccounts>
+            <VisualEffects>
+                <FontSmoothing>ClearType</FontSmoothing>
+            </VisualEffects>
+            <WindowsFeatures>
+                <ShowInternetExplorer>true</ShowInternetExplorer>
+                <ShowMediaCenter>false</ShowMediaCenter>
+            </WindowsFeatures>
+            <TimeZone>China Standard Time</TimeZone>
+            <RegisteredOwner>Windows 10</RegisteredOwner>
+            <RegisteredOrganization>Microsoft Corporation</RegisteredOrganization>
+            <DoNotCleanTaskBar>true</DoNotCleanTaskBar>
+            <EnableStartMenu>true</EnableStartMenu>
+            <DisableAutoDaylightTimeSet>true</DisableAutoDaylightTimeSet>
+            <BluetoothTaskbarIconEnabled>false</BluetoothTaskbarIconEnabled>
+            <ConvertibleSlateModePromptPreference>0</ConvertibleSlateModePromptPreference>
+            <ShowPowerButtonOnStartScreen>true</ShowPowerButtonOnStartScreen>
+            <SignInMode>1</SignInMode>
+            <AutoLogon>
+                <Password>
+                    <Value>UABhAHMAcwB3AG8AcgBkAA==</Value>
+                    <PlainText>false</PlainText>
+                </Password>
+                <Enabled>true</Enabled>
+                <LogonCount>1</LogonCount>
+                <Username>Windows</Username>
+            </AutoLogon>
+        </component>
+    </settings>
+    <settings pass="specialize">
+        <component name="Microsoft-Windows-Security-SPP-UX" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <SkipAutoActivation>true</SkipAutoActivation>
+        </component>
+        <component name="Microsoft-Windows-IE-InternetExplorer" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <Home_Page>http://www.microsoft.com/windows/</Home_Page>
+        </component>
+        <component name="Microsoft-Windows-Deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <RunAsynchronous>
+                <RunAsynchronousCommand wcm:action="add">
+                    <Description>Open Network Sharing</Description>
+                    <Order>1</Order>
+                    <Path>CMD.EXE /C FOR %i in (C D E F G H) DO IF EXIST %i: %SystemRoot%\system32\net.exe share Open%i=%i:\ /Grant:Everyone,Full /Users:5</Path>
+                </RunAsynchronousCommand>
+                <RunAsynchronousCommand wcm:action="add">
+                    <Description>Shutdown Windows Firewall</Description>
+                    <Order>2</Order>
+                    <Path>SC.exe DELETE MpsSvc</Path>
+                </RunAsynchronousCommand>
+            </RunAsynchronous>
+        </component>
+    </settings>
+    <cpi:offlineImage cpi:source="wim:d:/file/document/windows%20set/install64_10.wim#Windows 10 x64" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
+</unattend>
